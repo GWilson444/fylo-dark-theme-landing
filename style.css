@@ -1,0 +1,111 @@
+/* Universal Styles */
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;  
+}
+
+body {    
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3, h4, .call-to-action {
+    font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 26.5px 0;
+}
+
+h3, h4, p {
+    margin: 16px 0;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(218, 28%, 15%);
+}
+
+header figure {
+    margin-left: 60px;
+}
+
+header nav {
+    margin-right: 55px;
+}
+
+header nav span {
+    padding: 25px;
+}
+
+/* Main Styles */
+
+main {
+    background-color: hsl(218, 28%, 13%);
+}
+
+/* Intro Styles */
+
+.intro {
+    position: relative;
+    background-color: hsl(218, 28%, 15%);
+    z-index: 1;
+}
+.intro figure img {
+    display: block;
+    margin: auto;
+}
+
+.intro h2 {
+    width: 40%;
+    line-height: 1.5em;
+    margin: 28.5px auto;
+}
+
+.intro p {
+    width: 35%;
+    margin: 0 auto 16px;
+}
+
+.intro button {
+    padding: 16px 80px;
+    margin: 16px 0 16px;
+    background-image: linear-gradient(to bottom right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.curvy {
+    position: relative;
+    margin: -220px 0 -5px;
+    z-index: -1;
+}
+
+/* Features Style */
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.feature {
+    width: 45%;
+    padding-bottom: 80px;
+}
