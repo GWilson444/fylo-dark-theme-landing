@@ -15,7 +15,7 @@ body {
 h1,
 h2,
 h3,
-h4, {
+h4 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -35,7 +35,7 @@ p {
 }
 
 .left {
-    text-align: left;
+  text-align: left;
 }
 
 /* Header Styles */
@@ -62,16 +62,16 @@ header nav span {
 }
 
 button {
-    padding: 16px 80px;
-    margin: 16px 0 16px;
-    background-image: linear-gradient(
-      to bottom right,
-      hsl(176, 68%, 64%),
-      hsl(198, 60%, 50%)
-    );
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
+  padding: 16px 80px;
+  margin: 16px 0 16px;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(176, 68%, 64%),
+    hsl(198, 60%, 50%)
+  );
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
 }
 
 /* Main Styles */
@@ -82,23 +82,23 @@ main {
 
 /* Intro Styles */
 
-.intro {
+#intro {
   position: relative;
   background-color: hsl(218, 28%, 15%);
   z-index: 1;
 }
-.intro figure img {
+#intro figure img {
   display: block;
   margin: auto;
 }
 
-.intro h2 {
+#intro h2 {
   width: 40%;
   line-height: 1.5em;
   margin: 28.5px auto;
 }
 
-.intro p {
+#intro p {
   width: 35%;
   margin: 0 auto 16px;
 }
@@ -111,7 +111,7 @@ main {
 
 /* Features Style */
 
-.features {
+#features {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -123,29 +123,53 @@ main {
   padding-bottom: 80px;
 }
 
+.feature figure {
+  height: 92.8px;
+}
+
 /* Productivity Styles */
 
-.productivity {
+#productivity {
   display: flex;
   width: 88%;
 }
 
-.productivity .content {
+#productivity .content {
   text-align: left;
-  width: 43%;
+  width: 44%;
   margin: auto;
 }
 
-.productivity .content h2 {
+#productivity .content h2 {
   width: 55%;
+}
+
+#productivity .content a {
+  text-underline-offset: 10px;
+  color: hsl(176, 68%, 64%);
+}
+#productivity .content img {
+  margin-top: 8px;
+  vertical-align: middle;
+  padding: 0 0 5px 5px;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
 }
 
 /* Testimonials Styles */
 
-.testimonials {
+.quotes {
+  position: absolute;
+  left: 100px;
+  top: -35px;
+  z-index: -1;
+}
+
+#testimonials {
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 165px auto;
+  z-index: 1;
 }
 
 .testimonial {
@@ -163,12 +187,11 @@ main {
 }
 
 .profile img {
-    align-self: center;
+  align-self: center;
   border-radius: 50%;
   max-width: 25px;
   max-height: 25px;
   margin: 8px;
-} 
+}
 
 /* Call-to-Action Styles */
-
