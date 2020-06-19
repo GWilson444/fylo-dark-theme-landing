@@ -41,9 +41,9 @@
   <body>
     <!-- Header Section -->
 
-    <header>
+    <header class="flex">
       <figure>
-        <img class="logo" src="./images/logo.svg" alt="" />
+        <img src="./images/logo.svg" alt="logo" />
       </figure>
 
       <nav>
@@ -71,14 +71,14 @@
           family, and co-workers.
         </p>
 
-        <button type="button">Get Started</button>
+        <button type="button" class="button1">Get Started</button>
 
         <img class="curvy" src="./images/bg-curvy-desktop.svg" alt="" />
       </section>
 
       <!-- Features Section -->
 
-      <section id="features" class="center">
+      <section id="features" class="center flex">
         <div class="feature">
           <figure>
             <img src="./images/icon-access-anywhere.svg" alt="" />
@@ -135,7 +135,7 @@
 
       <!-- Productivity Section -->
 
-      <section id="productivity" class="center">
+      <section id="productivity" class="center flex">
         <figure>
           <img src="./images/illustration-stay-productive.png" alt="" />
         </figure>
@@ -153,14 +153,16 @@
             for live collaboration. No email attachments required.
           </p>
 
-          <a href="#">See how Fylo works<img src="./images/icon-arrow.svg"></a>
+          <a href="#"
+            >See how Fylo works<img src="./images/icon-arrow.svg"
+          /></a>
         </div>
       </section>
 
       <!-- Testimonials Section -->
-      
-      <section id="testimonials"> 
-        <img src="./images/bg-quotes.png" class="quotes" alt="">       
+
+      <section id="testimonials" class="flex">
+        <img src="./images/bg-quotes.png" class="quotes" alt="" />
         <div class="testimonial left">
           <p>
             Fylo has improved our team productivity by an order of magnitude.
@@ -168,10 +170,10 @@
             collaboration machine.
           </p>
 
-          <div class="profile left">
+          <div class="profile left flex">
             <img src="./images/profile-1.jpg" alt="" />
             <p>
-              <strong>Satish Patel</strong><br>
+              <strong>Satish Patel</strong><br />
               Founder & CEO, Huddle
             </p>
           </div>
@@ -184,7 +186,7 @@
             collaboration machine.
           </p>
 
-          <div class="profile left">
+          <div class="profile left flex">
             <img src="./images/profile-2.jpg" alt="" />
             <p>
               <strong>Bruce McKenzie</strong><br />
@@ -200,7 +202,7 @@
             collaboration machine.
           </p>
 
-          <div class="profile left">
+          <div class="profile left flex">
             <img src="./images/profile-3.jpg" alt="" />
             <p>
               <strong>Iva Boyd</strong><br />
@@ -212,7 +214,7 @@
 
       <!-- Call-to-Action Section-->
 
-      <section id="call-to-action">
+      <section id="call-to-action" class="center">
         <h3>Get early access today</h3>
 
         <p>
@@ -221,37 +223,59 @@
           be happy to help you.
         </p>
 
-        <div class="email-box">
+        <div class="email-box flex">
           <input type="email" name="email" placeholder="email@example.com" />
-          <button>Get Started For Free</button>
+          <button class="button2">Get Started For Free</button>
         </div>
       </section>
 
       <!-- Footer Section -->
 
       <footer>
-        <figure>
-          <img src="./images/logo.svg" alt="" />
+        <figure class="left">
+          <img src="./images/logo.svg" alt="logo" />
         </figure>
 
-        <img src="./images/icon-location.svg" alt="" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
+        <div class="footer-links left flex">
+          <div class="location">
+            <img src="./images/icon-location.svg" alt="location-pin" />
+            <p class="inline">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            </p>
+          </div>
 
-        <img src="./images/icon-phone.svg" alt="" />
-        <p>+1-543-123-4567</p>
+          <div class="media">
+            <div class="phone">
+              <img src="./images/icon-phone.svg" alt="phone" />
+              <a class="inline" href="tel:+15431234567">+1-543-123-4567</a>
+            </div>
 
-        <img src="./images/icon-email.svg" alt="" />
-        <p>example@fylo.com</p>
+            <div class="email">
+              <img src="./images/icon-email.svg" alt="email" />
+              <a class="inline" href="mailto:example@fylo.com">example@fylo.com</a>
+            </div>
+          </div>
 
-        About Us Jobs Press Blog Contact Us Terms Privacy
+          <div class="about flex column">
+            <a href="#">About Us</a>
+            <a href="#">Jobs</a>
+            <a href="#">Press</a>
+            <a href="#">Blog</a>
+          </div>
 
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram"></i>
+          <div class="contact flex column">
+            <a href="#">Contact Us</a>
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+          </div>
 
+          <div class="social">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+          </div>
+        </div>
         <p class="attribution">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
